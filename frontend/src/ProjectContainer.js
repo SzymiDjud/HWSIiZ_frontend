@@ -16,13 +16,13 @@ class ProjectContainer extends React.Component{
         return (
           <div className="mainProjectContainer">
               <div className="topBar">
-
+                    Tytuł
               </div>
               <div className="icon">
 
               </div>
               <div className="projectContainer">
-
+                {this.props.about}
               </div>
 
           </div>

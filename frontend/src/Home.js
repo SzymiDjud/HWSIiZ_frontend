@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
-
+import ProjectContainer from './ProjectContainer';
 class Home extends React.Component{
     constructor(props){
         super(props);
@@ -12,7 +12,17 @@ class Home extends React.Component{
     render(){
         
         return (
+            <div className="homeContainer">
           <Navbar />
+            <div className="projectsContainer">
+                <ProjectContainer />
+                <ProjectContainer />
+                <ProjectContainer />
+                <ProjectContainer />
+                <ProjectContainer />
+                <ProjectContainer />
+            </div>
+          </div>
         );
     }}
 
