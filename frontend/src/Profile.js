@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-class Home extends React.Component{
+class Profile extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -14,9 +14,9 @@ class Home extends React.Component{
         
         return (
           <div>
-              
+
           </div>
         );
     }}
 
-export default Home;
+export default Profile;

@@ -36,10 +36,16 @@ class Navbar extends React.Component{
                   Profil
                 </Menu.Item>
                 <SubMenu key="sub1" icon={<DesktopOutlined />} title="Projekty">
-                <Menu.Item key="3">Lista projektów</Menu.Item>
-                  <Menu.Item key="4">Nowy projekt</Menu.Item>
-                  <Menu.Item key="5">Moje projekty</Menu.Item>
+                    <Menu.Item key="2">Lista projektów</Menu.Item>
+                  <Menu.Item key="3">Nowy projekt</Menu.Item>
+                  <Menu.Item key="4">Moje projekty</Menu.Item>
                 </SubMenu>
+                <Menu.Item key="5" icon={<DesktopOutlined />} title="Sprzęt">
+                  Sprzęt
+                </Menu.Item>
+                <Menu.Item key="6" icon={<DesktopOutlined />} title="Użytkownicy">
+                  Użytkownicy
+                </Menu.Item>
               </Menu>
             </Sider>
           </Layout>
