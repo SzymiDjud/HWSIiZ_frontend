@@ -38,22 +38,7 @@ class ResetPassword extends React.Component{
               },
               body: JSON.stringify(data)
             })
-              .then(res => {
-                if (!res.ok) {
-                    this.setState({page: 2})
-                } else {
-                    this.setState({page: 1})
-                }
-                return res.json();
-              })
-              .then(json => {
-                  this.setState({
-                      password1Error: json.new_password1,
-                      password2Error: json.new_password2,
-                      uidError: json.uid,
-                      tokenError: json.token
-                  });
-              });
+              
           };
         
     render() {

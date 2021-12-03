@@ -63,3 +63,8 @@ transition: all 0.2s;
     background: #02492e !important;
 
 }
+.mainProjectContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
