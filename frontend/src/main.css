@@ -34,3 +34,32 @@
     [data-theme="dark"] .site-layout .site-layout-background {
       background: #141414;
     }
+.ant-layout-sider{
+    background:#007C4D !important;
+}
+
+.ant-layout-sider-trigger{
+    position: fixed;
+top: 0;
+z-index: 1;
+height: 48px;
+color: #fff;
+line-height: 48px;
+text-align: center;
+background: #002140;
+cursor: pointer;
+transition: all 0.2s;
+}
+.ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub{
+    color: rgba(255, 255, 255, 0.65) !important;
+    background: #007C4D !important;
+}
+
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected{
+    background-color: #02492e !important;
+}
+.ant-layout-sider-trigger{
+
+    background: #02492e !important;
+
+}
