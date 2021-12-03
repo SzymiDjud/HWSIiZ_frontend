@@ -63,8 +63,16 @@ class Login extends React.Component{
 
     render(){
         return(
-        <div>
+        <div className="registerMainContainer">
             Login
+            <div className="loginContainer">        
+                <form onSubmit={e => this.props.handle_login(e,this.state)}>
+                            <input type="text" placeholder="Email"/>
+                            <input type="text" placeholder="Password"/>
+                            <button type="submit">Zarejestruj się</button>
+                        </form>
+                
+            </div>
             <Link to="/register" >Register</Link>
         </div>
         )

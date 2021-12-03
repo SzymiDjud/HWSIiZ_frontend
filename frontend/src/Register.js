@@ -63,13 +63,13 @@ class Register extends React.Component{
             <div className="registerMainContainer">
                         Register
                 <div className="registerContainer">
-                    <form onSubmit={this.handle_signup(this.state)}>
+                    <form onSubmit={e => this.handle_signup(e,this.state)}>
                         <input type="text" placeholder="Email"/>
                         <input type="text" placeholder="Password"/>
                         <button type="submit">Zarejestruj się</button>
                     </form>
                 </div>
-
+                <Link to="/" >Login</Link>
         </div>
         )
 

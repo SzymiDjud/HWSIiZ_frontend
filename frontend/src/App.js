@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './main.css';
 import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
 import Login from './Login';
 import Register from './Register';
 import ResetPassword from './ResetPassword';
+import Home from './Home';
 import {BrowserRouter as Router, Switch} from 'react-router-dom';
 
 class App extends React.Component {
@@ -71,6 +71,7 @@ class App extends React.Component {
           <div className="App">
           <Switch>
             <PublicRoute exact path="/"  isAuthenticated={isAuthenticated}> <Login handle_login={this.handle_login}/></PublicRoute>
+            <PublicRoute path="/Home"  isAuthenticated={isAuthenticated}> <Home handle_login={this.handle_login}/></PublicRoute>
             <PublicRoute path="/Register" isAuthenticated={isAuthenticated} > <Register handle_signup={this.handle_signup} apiUrl={this.state.apiUrl}/> </PublicRoute>
             <PublicRoute path="/ResetPassword" isAuthenticated={isAuthenticated} > <ResetPassword handle_signup={this.handle_signup} apiUrl={this.state.apiUrl}/> </PublicRoute>
           </Switch>

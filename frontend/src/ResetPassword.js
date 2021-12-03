@@ -60,6 +60,7 @@ class ResetPassword extends React.Component{
         return(
             <div>
         Reset Password
+        <Link to="/" >login</Link>
         </div>
         )
     }
