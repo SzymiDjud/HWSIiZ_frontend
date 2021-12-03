@@ -66,7 +66,7 @@ class App extends React.Component {
     else{
       isAuthenticated = true;
     }
-    console.log(React.version);
+    
       return (
       <Router>
           <div className="App">

@@ -9,7 +9,7 @@ import {
         {...rest}
         render={
           ({ location }) => (
-            !isAuthenticated
+            isAuthenticated
               ? (
                 children
               ) : (
